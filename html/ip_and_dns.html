@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <title>IP & DNS</title>
+</head>
+<body>
+<div class="container-fluid">
+    <ul class="nav flex-sm-row nav-pills navbar-light" style="background-color: #e3f2fd;">
+        <a class="navbar-brand" href="index.html">How the Internet Works</a>
+        <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="internet.html">What is the Internet?</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="wires_cables_wifi.html">Wires, Cables, & WiFi</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="ip_and_dns.html">IP & DNS</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="packets_routing.html">Packets & Routing</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="http_and_html.html">HTTP & HTML</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="encryption.html">Encryption</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="cyb_sec.html">Cyber Security</a>
+        </li>
+    </ul>
+</div>
+<div class="container">
+    <div class="pt-3">
+        <h2>IP & DNS</h2>
+        <p>
+            All unique devices on the internet has unique addresses. This address is just a number (similar to a phone
+            number or street address) that is unique to each device at the edge of the network.
+        </p>
+        <p>
+            Addressing system is a part of one of the most important communication protocols, Internet Protocol (IP).
+            A computer’s address on a network is called its <b>IP Address</b>. A computer sends a message to another using the destination
+            device’s IP while providing the sender’s (origin) device's IP, this way the recipient knows exactly where
+            to send a message back to.
+        </p>
+        <p>
+            An IP Address is just numbers organized in a hierarchy similar to a home address (street, city, state, county, etc.).<br>
+            93.184.216.34<br>
+            8 bits for each part of the address, and traditionally represented country, region, subnetwork, and device.
+        </p>
+        <p>
+            This version of addressing is called IPv4 and provides more than 4 billion unique addresses for devices
+            connected to the internet. This was designed in 1973 adopted in the early 1980’s, so it hasn’t been able to
+            scale well with the large popularity of the internet today. We’re now in a multi-year transition phase to a
+            new version of IP addressing called IPv6, which uses 128 bits for addresses. This version allows for 340
+            undecillion unique addresses (more than enough for every grain of sand on Earth to have its own address,
+            and then some).
+        </p>
+        <div class="container">
+            <img src="images/ipv4_vs_ipv6.jpg" alt="IPv4 vs. IPv6" class="rounded" width="700" height="570">
+            <p>
+                <br> <i>This chart includes its source and shows the main differences between major versions of IP Addressing,
+                IPv4 and IPv6.</i>
+            </p>
+        </div>
+        <p>
+            <br>We usually don’t see IP Addresses when dealing with other computers, since they’re hard for humans to
+            remember multiple patterns of numbers. A system called <b>DNS</b> was designed to map more human-friendly names
+            with IP Addresses. You could think of DNS as a phonebook where computers look up a domain name and could then be returned an IP Address.
+        </p>
+        <p>
+            Computer uses the domain name to look up an associated IP address which is then used to connect your
+            computer with the destination on the internet. Computers will have to reach out to a DNS server to translate
+            the address, and a DNS server will reply with the proper IP address to navigate to. Due to the nature of the
+            internet being distributed, DNS systems should be as well. All the advantages of having a distributed system
+            still apply, and our DNS servers should be connected in a distributed hierarchy. This splits up
+            responsibility for each top level domain, such as .org, .com, .edu.<br>
+        </p>
+            ICANN (Internet Corporation for Assigned Names and Numbers) is a nonprofit organization that maintains a central
+        repository for IP addresses and manages the supply of IP addresses available. ICANN also
+        </p>
+    </div>
+</div>
+<div class="container">
+    <img src="images/dns.png" alt="DNS" class="rounded">
+    <p>
+        <i>This graphic shows a step-by-step process of what happens when a user tries to navigate to example.com form their
+            browser. Amazon's Rt. 53 service finally resolves the IP and returns it back to the user.</i>
+    </p>
+    <p>
+        <i>source: <a href="https://aws.amazon.com/route53/what-is-dns">https://aws.amazon.com/route53/what-is-dns/</a></i>
+    </p>
+</div>
+
+</body>
+</html>

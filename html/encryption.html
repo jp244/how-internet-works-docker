@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <title>Encryption</title>
+</head>
+<body>
+<div class="container-fluid">
+    <ul class="nav flex-sm-row nav-pills navbar-light" style="background-color: #e3f2fd;">
+        <a class="navbar-brand" href="./">How the Internet Works m8</a>
+        <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="internet.html">What is the Internet?</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="wires_cables_wifi.html">Wires, Cables, & WiFi</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="ip_and_dns.html">IP & DNS</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="packets_routing.html">Packets & Routing</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="http_and_html.html">HTTP & HTML</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="encryption.html">Encryption</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="cyb_sec.html">Cyber Security</a>
+        </li>
+    </ul>
+</div>
+<div class="container">
+    <div class="pt-3">
+        <h2>Encryption</h2>
+
+        <p>
+            Even though the internet is an open system which uses a lot of shared infrastructure, we still exchange a
+            lot of private data. Since the use of the internet is ubiquitous today, a lot of eCommerce and banking have
+            taken advantage of the connected world and moved their businesses online. Sensitive information such as
+            medical records, credit card numbers, banking information, communications, and passwords need to be
+            exchanged privately and securely to make this possible. Data can be kept secure over computer networks by
+            scrambling the plaintext information into ciphertext through a process known as encryption. The inverse of
+            this, decryption, is where the ciphertext is unscrambled and converted back into plaintext.
+        </p>
+        <p>
+            A key is a
+            shared secret between the sender and receiver which is used to unlock the encryption and retrieve the
+            intended payload. When the key is know to both the sender and receiver, it is called Symmetric Encryption.
+            Today’s secure communications use 256-bit key, which would take thousands of super computers capable of
+            trying billions of keys per second, trillions of years to try every option. In theory, it is possible to
+            still guess a correct key and intercept data, but in practice this security approach is ‘good enough’ in
+            that you would ‘run out the clock’ on your adversary’s computing power and/or lifetime. However, as
+            technology advances and computers become faster, we must alter the size of keys to correctly scale with
+            computer’s new and/or increased capabilities.
+        </p>
+        <p>
+            Since it isn’t always practical for two parties to meet and share an agreed and mutual private key,
+            Asymmetric Encryption was invented. With this type of encryption, a public key is exchanged with anyone,
+            and private key is kept and only accessible to the sender and receiver. This makes it so that a secret
+            message may only be decrypted by a computer with access to the relevant private key.
+        </p>
+    </div>
+</div>
+<div class="container">
+    <img src="images/pub_key.png" alt="public key encryption diagram" class="rounded">
+    <p>
+        <i>source: <a href="https://en.wikipedia.org/wiki/Public-key_cryptography">https://en.wikipedia.org/wiki/Public-key_cryptography</a></i>
+    </p>
+    <p>
+        <i>In this example of asymmetric key encryption, any user can encrypt a message with another's public key, but only
+            the owner of the paired private key will be able to decrypt it.</i>
+    </p>
+</div>
+</body>
+</html>

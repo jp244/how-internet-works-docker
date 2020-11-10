@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <title>HTTP and HTML</title>
+</head>
+<body>
+<div class="container-fluid">
+    <ul class="nav flex-sm-row nav-pills navbar-light" style="background-color: #e3f2fd;">
+        <a class="navbar-brand" href="index.html">How the Internet Works</a>
+        <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="internet.html">What is the Internet?</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="wires_cables_wifi.html">Wires, Cables, & WiFi</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="ip_and_dns.html">IP & DNS</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="packets_routing.html">Packets & Routing</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="http_and_html.html">HTTP & HTML</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="encryption.html">Encryption</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="cyb_sec.html">Cyber Security</a>
+        </li>
+    </ul>
+</div>
+<div class="container">
+    <div class="pt-3">
+        <h2>HTTP & HTML</h2>
+        <p>
+            To access the web, one uses a web browser and types in the address of the page they would like to visit.
+            The address of a page can also be referred to as a Uniform Resource Locator (URL). When you request to visit
+            a page, your computer, on the order of milliseconds, asks a server to access a page. After the connection is
+            established, a server responds in a language called HyperText Transfer Protocol. HTTP sends a GET request that
+            just tells the server to return the page requested by the end user. In order to tell a web browser exactly how
+            to structure a page, Hyper Text Markup Language (<b>HTML</b>) is used. HTML is represented by a series of tags and is often
+            accompanied by Cascading Style Sheets (CSS). <b>CSS</b> can further style a web document and enhance it with fonts,
+            colors, and other layout options. Both HTML and CSS are overseen by the <b>W3C</b> (World Wide Web Consortium), which is a body
+            overseen by Tim Berners Lee established to develop and maintain Web standards.
+        </p>
+        <div class="container">
+            <img src="images/web_doc.png" alt="web document comprising of many resources" class="rounded">
+            <p>
+                <i>source: <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview">https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview</a></i>
+            </p>
+            <p>
+                <i>This image illustrates how a web document on the Internet could be a composition of other sources. This
+                means that multiple GET requests (sometimes from different servers) may have to be completed to assemble
+                    the full requested page.</i>
+            </p>
+        </div>
+        <p>
+            When you’re interacting with a web page, you’re not always getting elements back from the web server,
+            sometimes you’re sending data back as well. For example, if you’re filling out a form to sign up for an
+            event, all of your inputted data will be encapsulated and sent back to the web server. The browser uses a
+            method called POST to send back data. This data is usually sent back to a web server in plain text, unless
+            both the web browser and web server communicate on a secure channel. Having a secure channel in place
+            prevents snooping and tampering from hackers. The layer of security needed to achieve this comes from the
+            Secure Sockets Layer (SSL) and Transport Layer Security (TLS) protocols. These protocols when combined with
+            HTTP make for the HyperText Transfer Protocol Secure (<b>HTTPS</b>) protocol. A web server will provide a digital
+            certification to your browser, proving that it is indeed the destination you intended on reaching. Digital
+            certificates are issued and verified by certificate authorities, which are trusted entities established for
+            the purpose of a secure web. Today, modern browsers will warn you when you try and visit web sites that
+            either have an expired certificate, or if the site is issuing one that was not expected for normal operation.
+        </p>
+    </div>
+    <div class="container">
+        <img src="images/http_attack.png" alt="DNS" class="rounded">
+    <p>
+        <i>This image includes its source and shows how basic HTTP is susceptible to passive and active attacks. This reinforces the
+        need for HTTPS when encryption is needed.</i>
+    </p>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <title>Packets & Routing</title>
+</head>
+<body>
+<div class="container-fluid">
+    <ul class="nav flex-sm-row nav-pills navbar-light" style="background-color: #e3f2fd;">
+        <a class="navbar-brand" href="index.html">How the Internet Works</a>
+        <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="internet.html">What is the Internet?</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="wires_cables_wifi.html">Wires, Cables, & WiFi</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="ip_and_dns.html">IP & DNS</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="packets_routing.html">Packets & Routing</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="http_and_html.html">HTTP & HTML</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="encryption.html">Encryption</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="cyb_sec.html">Cyber Security</a>
+        </li>
+    </ul>
+</div>
+<div class="container">
+    <div class="pt-3">
+        <h2>Packets & Routing</h2>
+        <p>
+            How is data delivered reliably? One word, routing. There is not direct dedicated line, it would be impossible
+            to scale, and there’s no way to guarantee every wire/computer is working at the same time.
+        </p>
+        <p>
+            Data must travel in a less direct fashion. The way information is transferred to one to another is not a
+            fixed path. Information is broken down into smaller pieces, called a <b>packet</b>. A packet and its delivery path, or <b>route</b>, depends on traffic conditions, which may end up
+            redirecting traffic to take different routes of the course of a message’s full transmission. A very large
+            image may be made up of tens of billions of bits, that will be too large for one packet.
+        </p>
+        <p>
+            A computer can quickly digest a large file and divide it into smaller packets ready for transportation. Each
+            packet, like a package, will have both the address it’s going to and coming from. Traffic managers, routers,
+            are in charge of redirecting packets in accordance with current networking conditions, to their final
+            destination. Packets can arrive to their destination at different times, or even out of order. The fault
+            tolerant characteristic keeps the internet reliable by ensuring that if one router fails, there are many
+            others to pick up the slack while an outage is addressed.
+        </p>
+        <p>
+            How can you be sure that 100% of a file is transmitted? The Transmission Control Protocol (TCP) manages the
+            sending and receiving of all your data as packets. This is similar to a guaranteed mail service. When packets
+            arrive, TCP does a full inventory to check packet health, and ensure the ordering/presence of expected
+            packets. TCP will send back acknowledgments to the sender for each packet it receives, and if all packets
+            are present, it will ‘sign’ for your delivery. However, if packets are not delivered, TCP will not
+            acknowledge them and the sender will have to resend missing packets. Devices on the internet connect,
+            communicate, and collaborate. This is because of agreed upon standards for
+            how data is sent.
+
+        </p>
+    </div>
+</div>
+<div class="container">
+    <img src="images/tcp_packets.png" alt="break down and assembly of packets" class="rounded">
+    <p>
+        <i>source: <a href="https://www.sangoma.com/how-ip-routing-works/">https://www.sangoma.com/how-ip-routing-works/</a></i>
+    </p>
+    <p>
+        <i>This diagram illustrates how an image (or any data) is broken down into smaller pieces (packets) by TCP, sent off
+        to a router, and then reassmbled into the original representation on the receiving computer.</i>
+    </p>
+</div>
+</body>
+</html>
